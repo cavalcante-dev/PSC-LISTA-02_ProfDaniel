@@ -6,25 +6,20 @@ public class Atv5 {
         
         Scanner sc = new Scanner(System.in);
         double valorAlemanha, valorPortugal, valorItalia, valorTotal;
-        int pessoasAlemanha, pessoasPortugal, pessoasItalia, pessoasTotal;
+        int pessoasTotal;
 
-        System.out.println("Digite o valor individual da viagem da Alemanha: ");
+        System.out.println("Digite o valor da viagem para Alemanha: ");
         valorAlemanha = sc.nextDouble();
-        System.out.println("Digite quantas pessoas vão para a viagem da Alemanha: ");
-        pessoasAlemanha = sc.nextInt();
 
-        System.out.println("Digite o valor individual da viagem da Portugal: ");
+        System.out.println("Digite o valor da viagem para Portugal: ");
         valorPortugal = sc.nextDouble();
-        System.out.println("Digite quantas pessoas vão para a viagem da Portugal: ");
-        pessoasPortugal = sc.nextInt();
 
-        System.out.println("Digite o valor individual da viagem da Itália: ");
+        System.out.println("Digite o valor da viagem para Itália: ");
         valorItalia = sc.nextDouble();
-        System.out.println("Digite quantas pessoas vão para a viagem da Itália: ");
-        pessoasItalia = sc.nextInt();        
+        System.out.println("Digite quantas pessoas vão para a Eurotrip: ");
+        pessoasTotal = sc.nextInt();        
 
-        pessoasTotal = pessoasItalia + pessoasPortugal + pessoasAlemanha;
-        valorTotal = (pessoasItalia * valorItalia) + (valorPortugal * pessoasPortugal) + (pessoasAlemanha * valorAlemanha); 
+        valorTotal = (valorItalia + valorPortugal + valorAlemanha) * pessoasTotal; 
 
         System.out.printf("O valor total da viagem para " + pessoasTotal + " pessoas é de %.2f", valorTotal);
 
