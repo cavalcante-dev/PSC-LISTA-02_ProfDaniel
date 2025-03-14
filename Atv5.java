@@ -24,9 +24,7 @@ public class Atv5 {
         pessoasItalia = sc.nextInt();        
 
         pessoasTotal = pessoasItalia + pessoasPortugal + pessoasAlemanha;
-        valorTotal = (pessoasItalia * valorItalia) + (valorPortugal * pessoasPortugal) + (pessoasAlemanha * valorAlemanha);
-
-        // Final do código pendendo ajustes. 
+        valorTotal = (pessoasItalia * valorItalia) + (valorPortugal * pessoasPortugal) + (pessoasAlemanha * valorAlemanha); 
 
         System.out.printf("O valor total da viagem para " + pessoasTotal + " pessoas é de %.2f", valorTotal);
 
