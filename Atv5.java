@@ -28,7 +28,7 @@ public class Atv5 {
 
         // Final do código pendendo ajustes. 
 
-        System.out.printf("%2f", "O valor total da viagem para ", pessoasTotal, " pessoas é de ", valorTotal, ".");
+        System.out.printf("O valor total da viagem para " + pessoasTotal + " pessoas é de %.2f", valorTotal);
 
         sc.close();
 
